@@ -508,6 +508,8 @@ WHERE
      FILTER (CONTAINS(?index,"field setting")).}
 }
 
+
+
 INSERT {?work :pedagogy :LearningCommunity}
 WHERE
 {
