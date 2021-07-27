@@ -27,3 +27,15 @@ SELECT ?p ?o
   {
     :Pereira2019 ?p ?o . 
   }
+
+
+
+### Walk down and find all works with are narrower than the Outcomes concept
+# The `+` does path traversal. 
+
+select  ?work ?concept2
+{
+    :Outcomes skos:narrower+ ?concept2.
+    ?work :outcome ?concept2.
+}
+ORDER BY ?concept2
